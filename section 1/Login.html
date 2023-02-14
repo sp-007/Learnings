@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+
+        :root{
+            --theme-color: rgb(136, 0, 255);
+        }
+
+        *{
+            font-family: Montserrat;
+        }
+
+        .mycard{
+            border-radius: 20px;
+            width: 25%;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: white;
+            /* box-shadow : x-offset y-offset blur size color */
+            box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.309);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background-color: #ccc; */
+            background-image: url('https://img.freepik.com/premium-photo/neat-minimalist-desk-flat-lay_23-2148219337.jpg?w=2000');
+            background-size: cover;
+            backdrop-filter: blur(5px) contrast(50%);
+            /* filter: blur(10px); */
+            margin: 0;
+        }
+        
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Montserrat;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.302);
+        }
+
+        .myinput, .mybtn, .mylink1, .mylink2, .mylink3{
+            display: block;
+            width: 100%;
+        }
+
+        .myinput{
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid var(--theme-color);
+        }
+
+        .mybtn{
+            /* background-color: var(--theme-color); */
+            background-image: linear-gradient(120deg, #d400ff, #00d5ff);
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+        }
+
+        .mylink1{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--theme-color);
+        }
+
+        .mylink2{
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            color: var(--theme-color);
+            margin-top: 50px;
+        }
+
+        .mylink3{
+            text-align: center;
+            text-decoration: none;
+            color: #999;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="mycard">
+
+        <p class="title">Log In</p>
+
+        <input class="myinput" type="text" placeholder="Enter Email Address">
+        <input class="myinput" type="password" placeholder="Enter Password">
+
+        <a href="" class="mylink1">Forgot Password</a>
+
+        <button class="mybtn">Submit</button>
+
+        <a href="" class="mylink2">SignUp</a>
+
+        <a href="" class="mylink3">Terms & Conditions</a>
+
+    </div>
+
+</body>
+</html>
