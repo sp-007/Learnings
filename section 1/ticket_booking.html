@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <style>
+        body{
+            background-color: rgba(240, 240, 240, 0.8);
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: auto auto;
+            grid-template-rows: 100%;
+            column-gap: 100px;
+        }
+        .box{
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px 10px lightgrey;
+            background-color: rgba(240, 240, 240, 1);
+            border-radius: 10px;
+        }
+        input,button,select,label{
+            text-transform: capitalize;
+            padding: 5px;
+            font-size: 20px;
+            font-style: italic;
+            background-color: rgba(240, 240, 240, 1);
+            
+        }
+        input ,select,button{
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+        input[type=submit]:hover , button:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 25px;
+        }
+        label{color: grey; font-weight: bold;}
+        h1{
+            text-align: center;
+            font-style: italic;
+            text-transform: uppercase;
+            text-shadow: 2px 5px grey;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>    
+    <form  class="box" action="">
+        <h1>Ticket Counter</h1>
+        <label>Theatre :</label>
+        <select>
+            <option>INOX</option>
+            <option>PVR</option>
+            <option>Carnival</option>
+            <option>Novality</option>
+        </select>
+        <br><br>
+        <label>City :</label>
+        <select>
+            <option>Lucknow</option>
+            <option>Sultanpur</option>
+            <option>Lakhimpur</option>
+            <option>Raiberaly</option>
+        </select>
+        <br><br>
+        <label>Movie :</label>
+        <select>
+            <option>Pathaan</option>
+            <option>Quantumania</option>
+            <option>Avatar</option>
+        </select>
+        <br><br>
+        <label>Email :</label>
+        <input type="email">
+        <br><br>
+        <label>Phone No. :</label>
+        <input type="text">
+        <br><br>
+        <label>Ticket Count :</label>
+        <input type="number" value="1" min="1">
+        <br><br>
+        <label>Date :</label>
+        <input type="date">
+        <br><br>
+        <label>Timings :</label>
+        <input type="radio" name="time"><label>9AM-12PM</label>
+        <input type="radio" name="time"><label>12PM-3PM</label>
+        <input type="radio" name="time"><label>3PM-6PM</label>
+        <br><br>
+        <input type="submit">
+        <button>Cancel</button>
+    </form>
+    <span>
+        <img class="box" height="240" width="240" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4zLzEwICAzMDcuN0sgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00323848-hasmqjqyvj-portrait.jpg" alt="">
+        <img class="box" height="240" width="240" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTMyLjRLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00302402-uxblpazjxh-portrait.jpg" alt="">
+        <img class="box"  height="240" width="240" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICAyMTcuNUsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bdbylvqqwb-portrait.jpg" alt="">
+        <img class="box"  height="240" width="240" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-Mi4ySyBsaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00350893-kksllqcchx-portrait.jpg" alt="">
+    </span>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Student Admission Form</h1>
+
+      <label>Full Name</label>
+      <input type="text" required minlength="4" />
+
+      <br><br>
+      <label>Contact</label>
+      <input type="number">
+
+      <br /><br />
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter email address" />
+
+      <br /><br />
+      <label>Address</label>
+      <br />
+      <textarea cols="50" rows="5"></textarea>
+
+      <br /><br />
+      <label>Date of Birth</label>
+      <input type="date" />
+
+      <br /><br />
+      <label>Gender</label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+
+      <br /><br />
+      <label>Select your city</label>
+      <select>
+        <option>Lucknow</option>
+        <option>Gorakhpur</option>
+        <option>Sultanpur</option>
+        <option>Ayodhya</option>
+      </select>
+
+      <br /><br />
+      <label>Select Course</label>
+      <input type="text" list="course" />
+      <datalist id="course">
+        <option>BCA</option>
+        <option>BTech</option>
+        <option>MCA</option>
+        <option>MBA</option>
+        <option>BVoc</option>
+      </datalist>
+
+      <br>
+      <input type="checkbox" /> I Accept Terms and Conditions
+
+      <br><br>
+      <details>
+        <summary>Terms & Conditions</summary>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus
+          dicta velit corporis vero. Quo odit molestiae necessitatibus fugit
+          natus, quisquam explicabo perspiciatis id vero officiis enim rerum
+          dolor aliquam, aperiam odio dolores, beatae officia quis voluptas
+          aspernatur incidunt. Perspiciatis repellat laborum reprehenderit
+          officiis dignissimos ipsa quod vero! Magnam, autem.
+        </p>
+      </details>
+
+      <br /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
